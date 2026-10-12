@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "PassyCorePackage",
-    platforms: [.iOS(.v17), .watchOS("10.6"), .macCatalyst(.v17)],
+    platforms: [.iOS("15.6"), .watchOS("10.6"), .macCatalyst("15.6")],
     products: [
         .library(name: "PassyCore",
                  targets: ["PassyCoreDependencies"])
@@ -23,12 +23,12 @@ let package = Package(
                                         package: "signalr-client-swift",
                                         condition: .when(platforms: [.iOS, .macCatalyst, .macOS]))]),
         .binaryTarget(name: "PassyAbstractions",
-                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.37/PassyAbstractions-1.0.37.xcframework.zip", checksum: "f632328f8c263b17cb494df94d93c2b3a57e2536f4add69d22f2a8bbde97a647"),
+                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.38/PassyAbstractions-1.0.38.xcframework.zip", checksum: "b716157b189752d8161e50951cd153f5756691d38f1d266f82d1ca29d09da294"),
         .binaryTarget(name: "PassyDiagnostics",
-                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.37/PassyDiagnostics-1.0.37.xcframework.zip", checksum: "40102f387d50e527dd51e8b5ebae61f1ed99c11b1bd803d83304966cd81afa89"),
+                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.38/PassyDiagnostics-1.0.38.xcframework.zip", checksum: "65b796d111c35cdaa196ae6e9aaa5b690e2f18243f9e99863e4140bead3cd065"),
         .binaryTarget(name: "PassyCore",
-                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.37/PassyCore-1.0.37.xcframework.zip", checksum: "cb70094639d352aff8f685cf247b5d80929e46fff4ccc44400b4ec05ab03464a"),
+                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.38/PassyCore-1.0.38.xcframework.zip", checksum: "fb986f6b71cda972c289617f784b7825870aafb7c450e0021dfaa71c237cf4a2"),
         .binaryTarget(name: "PassySecurity",
-                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.37/PassySecurity-1.0.37.xcframework.zip", checksum: "4a461c9526f2ded36ca72f3c897e53a5efb7352a7d9ee071795ca706d76052b3")
+                      url: "https://github.com/PassySRL/PassyCorePackage/releases/download/1.0.38/PassySecurity-1.0.38.xcframework.zip", checksum: "f2e357f30ddaf78d6f77faf6758b48ae2557f6b38a5eb2e3d3814ed1a3ade594")
     ]
 )
